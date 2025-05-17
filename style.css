@@ -12,6 +12,15 @@ body {
   line-height: 1.6;
 }
 
+a {
+  color: #00b894; /* accent color */
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
 header {
   background: linear-gradient(to right, #1f1c2c, #928dab);
   padding: 60px 20px;
@@ -21,6 +30,7 @@ header {
 header h1 {
   font-size: 3rem;
   margin-bottom: 10px;
+  color: #00b894; /* match HTML accent color */
 }
 
 header p {
@@ -59,12 +69,4 @@ ul li {
 
 ul li:hover {
   background: #333;
-}
-
-#3d-container {
-  width: 100%;
-  height: 60vh;
-  margin-bottom: 40px;
-  background-color: #222;
-  border-radius: 10px;
 }
