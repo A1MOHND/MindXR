@@ -70,3 +70,10 @@ ul li {
 ul li:hover {
   background: #333;
 }
+#3d-container {
+  width: 100%;          /* The container will be as wide as the page/content */
+  height: 500px;        /* Give it a fixed height so you can see it */
+  background-color: #222; /* Dark background to make the model stand out */
+  border-radius: 10px;  /* Rounded corners (optional, just looks nice) */
+  margin: 40px 0;       /* Space above and below the container */
+}
