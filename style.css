@@ -1,0 +1,70 @@
+/* Reset default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #fff;
+  background-color: #111;
+  line-height: 1.6;
+}
+
+header {
+  background: linear-gradient(to right, #1f1c2c, #928dab);
+  padding: 60px 20px;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+header p {
+  font-size: 1.2rem;
+  color: #ccc;
+}
+
+main {
+  padding: 40px 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+section {
+  margin-bottom: 60px;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #f0a500;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+ul li {
+  background: #222;
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  transition: background 0.3s;
+}
+
+ul li:hover {
+  background: #333;
+}
+
+#3d-container {
+  width: 100%;
+  height: 60vh;
+  margin-bottom: 40px;
+  background-color: #222;
+  border-radius: 10px;
+}
