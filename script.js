@@ -39,14 +39,11 @@ loader.load(
 // Animate loop
 function animate() {
   requestAnimationFrame(animate);
-  // Optional: rotate the model if you want
-  // if (object) object.rotation.y += 0.01;
-
   renderer.render(scene, camera);
 }
 animate();
 
-// Optional: handle window resize
+// Handle window resize
 window.addEventListener('resize', () => {
   const width = container.clientWidth;
   const height = container.clientHeight;
@@ -54,3 +51,4 @@ window.addEventListener('resize', () => {
   camera.aspect = width / height;
   camera.updateProjectionMatrix();
 });
+
