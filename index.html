@@ -26,6 +26,11 @@
       line-height: 1.6;
     }
 
+    a {
+      color: var(--accent-color);
+      text-decoration: none;
+    }
+
     header {
       text-align: center;
       padding: 3rem 1rem;
@@ -89,12 +94,21 @@
     <section id="contact">
       <h2>Contact Us</h2>
       <div class="contact-info">
-        <p>Email: <a href="mailto:almohannadalwhaibi@gmail.com" style="color: var(--accent-color);">almohannadalwhaibi@gmail.com</a></p>
-        <p>Phone: <a href="tel:+96877323797" style="color: var(--accent-color);">+968 7732 3797</a></p>
+        <p>Email: <a href="mailto:almohannadalwhaibi@gmail.com">almohannadalwhaibi@gmail.com</a></p>
+        <p>Phone: <a href="tel:+96877323797">+968 7732 3797</a></p>
       </div>
     </section>
   </main>
+
+  <!-- Extra height to allow scrolling for model rotation -->
   <div style="height: 2000px;"></div>
+
+  <!-- Fallback if JavaScript is disabled -->
+  <noscript>
+    <p style="text-align: center; color: red;">JavaScript must be enabled to view the 3D model.</p>
+  </noscript>
+
+  <!-- 3D model script -->
   <script type="module" src="cube.js"></script>
 </body>
 </html>
