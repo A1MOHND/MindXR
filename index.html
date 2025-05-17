@@ -5,87 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>MindXR</title>
   <link rel="stylesheet" href="style.css" />
-  <style>
-    :root {
-      --primary-color: #0a192f; /* dark blue */
-      --accent-color: #00b894; /* dark green */
-      --text-color: #ffffff;
-      --gradient-bg: linear-gradient(135deg, #0a192f, #003d2e);
-    }
-
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
-
-    body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: var(--gradient-bg);
-      color: var(--text-color);
-      line-height: 1.6;
-    }
-
-    a {
-      color: var(--accent-color);
-      text-decoration: none;
-    }
-
-    header {
-      text-align: center;
-      padding: 3rem 1rem;
-      background: var(--primary-color);
-    }
-
-    header h1 {
-      font-size: 3rem;
-      color: var(--accent-color);
-    }
-
-    header p {
-      font-size: 1.25rem;
-      margin-top: 0.5rem;
-    }
-
-    #3d-container {
-      width: 100%;
-      height: 60vh;
-      background-color: #111;
-      border-radius: 12px;
-      margin: 2rem auto;
-    }
-
-    main {
-      padding: 2rem;
-      max-width: 960px;
-      margin: auto;
-    }
-
-    section {
-      margin-bottom: 2rem;
-    }
-
-    h2 {
-      color: var(--accent-color);
-      margin-bottom: 0.5rem;
-    }
-
-    .contact-info {
-      background: rgba(255, 255, 255, 0.05);
-      padding: 1rem;
-      border-radius: 8px;
-    }
-
-    @media (max-width: 600px) {
-      header h1 {
-        font-size: 2.2rem;
-      }
-
-      main {
-        padding: 1rem;
-      }
-    }
-  </style>
 </head>
 <body>
   <header>
@@ -93,16 +12,16 @@
     <p>Game Development, VR Simulations, Apps & AI Solutions</p>
   </header>
 
-  <!-- 🎯 3D container for the cube -->
-  <div id="3d-container"></div>
-
   <main>
     <section id="about">
       <h2>About Us</h2>
       <p>Welcome to MindXR! We build immersive experiences using Unreal Engine, create cutting-edge VR simulations, develop interactive applications, and innovate with AI.</p>
     </section>
-	
-	<div id="3d-container"></div>
+
+    <section id="3d-model">
+      <h2>3D Model</h2>
+      <div id="3d-container"></div> <!-- This is where the 3D model will show -->
+    </section>
 
     <section id="contact">
       <h2>Contact Us</h2>
@@ -113,15 +32,9 @@
     </section>
   </main>
 
-  <!-- Extra height to allow scrolling for model rotation -->
   <div style="height: 2000px;"></div>
 
-  <!-- Fallback if JavaScript is disabled -->
-  <noscript>
-    <p style="text-align: center; color: red;">JavaScript must be enabled to view the 3D model.</p>
-  </noscript>
-
-  <!-- 3D model script -->
+  <!-- Load your 3D script -->
   <script type="module" src="script.js"></script>
 </body>
 </html>
